@@ -7,10 +7,10 @@ import java.lang.annotation.*;
  * @create 2019/6/21
  * @describe
  */
-@Target({ElementType.TYPE})
+@Target(ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface KService {
+public @interface KRequestParam {
 
     String value() default "";
 }

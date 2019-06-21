@@ -7,10 +7,10 @@ import java.lang.annotation.*;
  * @create 2019/6/21
  * @describe
  */
-@Target(ElementType.METHOD)
+@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface KAutowrited {
 
-    String name() default "";
+    String value() default "";
 }
